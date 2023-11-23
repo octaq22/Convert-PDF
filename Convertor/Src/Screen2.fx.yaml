@@ -1,0 +1,29 @@
+Screen2 As screen:
+
+    Timer2 As timer:
+        AutoStart: =true
+        Duration: =40000
+        Height: =92
+        OnTimerEnd: =Navigate(Screen1)
+        Visible: =false
+        Width: =214
+        ZIndex: =1
+
+    Label9 As label:
+        Height: =259
+        Size: =28
+        Text: ="Continutul se incarca va rog asteptati..."
+        Width: =758
+        X: =283
+        Y: =92
+        ZIndex: =2
+
+    Image3 As image:
+        Height: =319
+        Image: =giphy
+        ImagePosition: =ImagePosition.Stretch
+        Width: =436
+        X: =398
+        Y: =258
+        ZIndex: =3
+

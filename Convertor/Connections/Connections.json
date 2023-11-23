@@ -1,0 +1,139 @@
+{
+  "20cc2073-7e31-434c-9a6d-b6744bc8f2e2": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "c67fc714-f26f-4271-a900-ad1cb5976639": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9600d03f-778c-43e7-bb77-cdeb9832205d"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "c67fc714-f26f-4271-a900-ad1cb5976639"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9600d03f-778c-43e7-bb77-cdeb9832205d"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "C_excel"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "c67fc714-f26f-4271-a900-ad1cb5976639"
+    },
+    "dependents": [],
+    "id": "20cc2073-7e31-434c-9a6d-b6744bc8f2e2"
+  },
+  "85bc1538-26c6-4c02-8803-bcf8639bffc4": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "c67fc714-f26f-4271-a900-ad1cb5976639": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "b5bd56d7-5b09-471b-96d0-e033e1139a27"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "c67fc714-f26f-4271-a900-ad1cb5976639"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "b5bd56d7-5b09-471b-96d0-e033e1139a27"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "UpConvert"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "c67fc714-f26f-4271-a900-ad1cb5976639"
+    },
+    "dependents": [],
+    "id": "85bc1538-26c6-4c02-8803-bcf8639bffc4"
+  },
+  "c67fc714-f26f-4271-a900-ad1cb5976639": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://didatec.sharepoint.com/sites/Concedii": {
+        "dataSources": {
+          "C_excel_editat": {
+            "tableName": "b4c7302c-93ab-4ecd-a68d-69c967fcff15"
+          },
+          "Convertor": {
+            "tableName": "71282c9e-b500-4820-b836-62550126c6cd"
+          },
+          "Convertor editat": {
+            "tableName": "5dc5d6eb-f99b-4918-b976-bceb4871db0d"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Convertor",
+      "Convertor editat",
+      "C_excel_editat"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "20cc2073-7e31-434c-9a6d-b6744bc8f2e2",
+      "85bc1538-26c6-4c02-8803-bcf8639bffc4"
+    ],
+    "id": "c67fc714-f26f-4271-a900-ad1cb5976639"
+  },
+  "f1b6f3b5-f907-4d5f-b740-5dbf8b9b9b4b": {
+    "appActions": [
+      "SendEmailV2"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f1b6f3b5-f907-4d5f-b740-5dbf8b9b9b4b"
+  }
+}
